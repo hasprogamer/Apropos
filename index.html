@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos de Moi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>À Propos de Moi/Accueil</h1>
+    </header>
+    <section id="about">
+        <img src="profil.jpg" alt="Photo de Profil">
+        <div>
+            <h2>À Propos de Moi</h2>
+            <p>Rayfoul, YouTuber spécialisé dans le développement web front-end depuis 2 ans"</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Mes Compétences</h2>
+        <div class="skill">
+            <div class="circle" data-percent="100"></div>
+          <h2>HTML CSS</h2>
+        </div>
+        <div class="skill">
+            <div class="circle" data-percent="90"></div>
+          <h2>BOOTSTRAP</h2>
+        </div>
+        <div class="skill">
+            <div class="circle" data-percent="90"></div>
+          <h2>JAVASCRIPT</h2>
+        </div>
+        
+        </div>
+    </section>
+    <section id="reference">
+        <h2>Référence</h2>
+        <div class="reference">
+            <img src="profil.jpg" alt="Photo de Référence">
+            <blockquote>contacter moi pour vos projets.</blockquote>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <div class="contact-info">
+            <img src="profil.jpg" alt="Photo de Profil">
+            <div>
+                <p>Téléphone: +225 01 00 28 8394</p>
+                <p>Email: japprendfacilementaprogrammer@gmail.com</p>
+                <p>Site Web: https://dribbble.com/Rayfoul</p>
+            </div>
+        </div>
+        <form>
+            <input type="text" name="name" placeholder="Nom">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Message"></textarea>
+           <button onclick="window.location.href='mailto:japprendfacilementaprogrammer@gmail.com';" class="gmail-button">Envoyer un Email</button></form>
+    <script>
+        document.querySelectorAll('.circle').forEach(circle => {
+            const percent = circle.getAttribute('data-percent');
+            circle.style.setProperty('--percent', percent);
+        });
+    </script>
+</body>
+</html>
